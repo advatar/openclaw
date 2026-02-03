@@ -57,6 +57,14 @@ const entries: SubCliEntry[] = [
     },
   },
   {
+    name: "clawd",
+    description: "Codex + OpenClaw compatibility runtime",
+    register: async (program) => {
+      const mod = await import("../clawd-cli.js");
+      mod.registerClawdCli(program);
+    },
+  },
+  {
     name: "logs",
     description: "Gateway logs",
     register: async (program) => {
