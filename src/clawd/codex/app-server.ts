@@ -258,7 +258,7 @@ export class CodexAppServerClient {
     const initialize = await this.sendRequest("initialize", {
       client_info: {
         name: "clawd",
-        title: "codex-clawd",
+        title: "clawdex",
         version: "0.1.0",
       },
       capabilities: {
